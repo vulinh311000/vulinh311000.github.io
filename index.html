@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OK</title>
+</head>
+<body>
+<textarea id="champions"></textarea>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript">rg_force_manifest = 'https://ddragon.leagueoflegends.com/realms/na.js'</script>
+<script type="text/javascript" src="dragonhead.js"></script>
+<script type="text/javascript">
+	Riot.DDragon.addApp(["item", "champion"],async function() {
+        const i = Riot.DDragon.useModel("champion");
+        var bar = new Promise((resolve, reject) => {
+        	var champions = [];
+		    i.keys.forEach(async function(champion, index, array) {
+				let skins = await getSkins(i,champion);
+	        	champions.push({
+	        		name: champion,
+	        		skins
+	        	});
+	        	if (champions.length === i.keys.length) resolve(champions);
+	        });
+
+		});
+
+		var championsString = JSON.stringify(await bar);
+        
+        $("#champions").val(championsString);
+
+        console.log(JSON.parse(championsString));
+
+
+
+        // return i.data.hasOwnProperty('Akali') ? i.getFull('Akali', !1, function(i) {
+        //     console.log(i);
+        // }) : ''
+    })
+
+    function getSkins(i,champion) {
+    	return new Promise(function(resolve,reject) {
+			i.getFull(champion, !1, function(i) {
+		        resolve(i.skins)
+		    });
+    	});
+    	
+    }
+</script>
+</body>
+</html>
