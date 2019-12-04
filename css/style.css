@@ -208,10 +208,6 @@ body {
     .skills_ .skill {
         width: 20% !important;
     }
-
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 940px!important;
-    }
 }
 
 @media (min-width: 576px) {
