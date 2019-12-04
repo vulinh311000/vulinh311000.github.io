@@ -122,7 +122,7 @@ body {
     color: white;
 }
 
-.menu .trans.active {
+.menu .trans.active{
     background: #ff6262;
     color: white;
 }
@@ -168,12 +168,12 @@ body {
     background-color: #efefef;
 }
 
-.img-fluid {
-    width: 60px !important;
-    max-width: unset;
+.img-skill {
+    height: auto;
+    width: 60px;
 }
 
-.profile a, .skills a, .experience a {
+.profile a,.skills a,.experience a {
     font-weight: 500;
     color: #ff6262;
     text-decoration: none;
@@ -195,7 +195,8 @@ body {
     justify-content: center;
 }
 
-.skill .s-name {
+
+.skill .s-name{
     text-align: center;
     margin-top: 5px;
     font-weight: 300;
