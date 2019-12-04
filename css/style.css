@@ -186,20 +186,37 @@ body {
 }
 
 .skills_ {
-    display: flex;
     flex-wrap: wrap;
     /* justify-content: center; */
 }
 
 .skills_ .skill {
     margin-bottom: 10px;
-    width: 20%;
-    padding: 0 60px;
+    width: 50%;
+    /*padding: 0 60px;*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
     flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .skills_ .skill {
+        width: 25% !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .skills_ .skill {
+        width: 20% !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .skills_ .skill {
+        width: 33.33333%;
+    }
 }
 
 .skill .s-name {
