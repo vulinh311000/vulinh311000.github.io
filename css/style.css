@@ -180,7 +180,6 @@ body {
 }
 
 .skills_ {
-    padding: 0 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -189,13 +188,11 @@ body {
 .skills_ .skill {
     margin-bottom: 10px;
     width: 20%;
-    /* padding: 0 60px; */
+    padding: 0 60px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 
