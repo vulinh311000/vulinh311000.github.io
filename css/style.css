@@ -120,13 +120,14 @@ body {
     border-color: #181818;
 }
 
-.menu .trans.active:hover{
+.menu .trans.active:hover {
     border-color: #00c4ff;
 }
 
 .menu .trans.active {
     background: #00c4ff;
     color: white;
+    border: 1px solid #00c4ff;
 }
 
 .page {
