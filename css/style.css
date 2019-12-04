@@ -171,11 +171,6 @@ body {
     background-color: #e2f8ff;
 }
 
-.img-skill {
-    height: auto;
-    width: 60px;
-}
-
 .page a {
     font-weight: 500;
     color: #007a9e;
@@ -199,8 +194,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
+}
+
+.skills_ .skill i{
+    font-size: -webkit-xxx-large;
 }
 
 @media (min-width: 768px) {
