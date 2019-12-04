@@ -210,7 +210,7 @@ body {
     }
 
     .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 940px;
+        max-width: 940px!important;
     }
 }
 
