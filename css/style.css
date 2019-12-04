@@ -220,6 +220,12 @@ body {
     }
 }
 
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 760px;
+    }
+}
+
 .skill .s-name {
     text-align: center;
     margin-top: 5px;
