@@ -116,8 +116,12 @@ body {
 }
 
 .menu .trans:hover {
-    background: #404040;
-    color: white;
+    color: black;
+    border-color: #181818;
+}
+
+.menu .trans.active:hover{
+    border-color: #00c4ff;
 }
 
 .menu .trans.active {
