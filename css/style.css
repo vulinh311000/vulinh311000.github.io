@@ -1,7 +1,203 @@
-html {
-    font-family: 'Roboto', sans-serif;
+body {
+    font-family: 'Quicksand', sans-serif !important;
 }
 
-.container{
-
+.main {
 }
+
+.information {
+    margin: 30px 0;
+    padding: 15px;
+    width: 100%;
+    align-items: center;
+}
+
+.information > .top {
+    background: #ff6262;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information .details {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.information .details p {
+    margin: 0;
+}
+
+.information .name {
+    margin-top: 15px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    font-size: 31px;
+}
+
+.information .job {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.information i {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.information .birthday {
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.information .social a {
+    color: #010101;
+    font-size: 21px;
+}
+
+.information .details {
+    padding: 15px 30px;
+    align-self: stretch;
+}
+
+.avatar {
+    overflow: hidden;
+    width: 180px;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.avatar div {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    height: 30%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    transition: .15s;
+}
+
+.avatar div:hover {
+    background: rgba(40, 105, 202, 0.75);
+}
+
+.avatar a {
+    font-size: 21px;
+    color: white;
+}
+
+.menu {
+    margin-top: 10px;
+    border: 1px solid #dee2e6;
+    padding: 5px;
+    display: flex;
+}
+
+.menu .trans {
+    background: white;
+    border: 1px solid #dee2e6;
+    outline: none;
+    padding: 7px 10px;
+    margin-right: 5px;
+    transition: .15s;
+    font-size: 15px;
+}
+
+.menu .trans:hover {
+    background: #181818;
+    color: white;
+}
+
+.menu .trans.active{
+    background: #ff6262;
+    color: white;
+}
+
+.page {
+    margin-top: 10px;
+}
+
+.page .lead {
+    background: #404040;
+    color: white;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.page .lead i {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.page .line {
+}
+
+.page .line i {
+    margin-right: 10px;
+    font-size: 9px;
+}
+
+.info span {
+    border-radius: 5px;
+    font-weight: bold;
+    width: 85px;
+    color: #ff6262;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 3px 5px;
+    border: 1px solid #9a9a9a;
+    background-color: #efefef;
+}
+
+.profile a,.skills a,.experience a {
+    font-weight: 500;
+    color: #ff6262;
+    text-decoration: none;
+}
+
+.skills_ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills_ .skill {
+    margin-bottom: 10px;
+    width: 20%;
+    padding: 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.skill .s-name{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+.skill {
+    height: 120px;
+}
+

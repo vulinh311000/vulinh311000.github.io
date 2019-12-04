@@ -5,14 +5,177 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-
-    <div>
-        hello
-        opok
+<div class="container main" id="app">
+    <div class="information border">
+        <div class="top d-flex w-100 p-3">
+            <div class="avatar">
+                <img src="img/avatar.jpg" class="img-fluid" alt="">
+                <a href="https://www.facebook.com/vulinh007" target="_blank">
+                    <div>
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="details">
+                <p class="name">Vũ Hoàng Lĩnh</p>
+                <p class="job">PHP & Javascript Developer</p>
+            </div>
+        </div>
+        <div class="menu">
+            <button class="trans" v-on:click="setTab('profile')" v-bind:class="{'active': tab === 'profile'}">Profile</button>
+            <button class="trans" v-on:click="setTab('experience')" v-bind:class="{'active': tab === 'experience'}">Experience</button>
+            <button class="trans" v-on:click="setTab('skills')" v-bind:class="{'active': tab === 'skills'}">Skills</button>
+        </div>
+        <div class="page border">
+            <div class="profile" v-bind:class="{'d-none': tab !== 'profile'}">
+                <p class="lead"><i class="fas fa-user"></i>About Me</p>
+                <div class="p-3">
+                    <p class="info"><span>Name</span>Vũ Hoàng Lĩnh</p>
+                    <p class="info"><span>Address</span>Bến Chà Vi, Khu Phố 5, Mỹ Phước, Bến Cát, Bình Dương</p>
+                    <p class="info"><span>Birthday</span>March 31, 2001</p>
+                    <p class="info"><span>Email</span>vlinh12300@gmail.com</p>
+                    <p class="info"><span>Phone</span>0971697776</p>
+                    <p class="info mb-0"><span>Github</span><a href="https://github.com/vulinh311000" target="_blank">vulinh311000</a>
+                    </p>
+                </div>
+            </div>
+            <div class="experience" v-bind:class="{'d-none': tab !== 'experience'}">
+                <p class="lead"><i class="fas fa-shield-alt"></i>Experience</p>
+                <div class="p-3">
+                    <p class="line info"><span>2016</span> Bắt đầu học lập trình web ( HTML,CSS,JS,PHP )</p>
+                    <p class="line info"><span>2017</span> Tạo ra sản phẩm đầu tiên ( <a
+                            href="https://www.facebook.com/vulinh007/videos/2065932013626262/" target="_blank">xem</a> )
+                        xây dựng bằng Zend Framework [PHP] </p>
+                    <p class="line info"><span>2018</span> Học Framework Laravel</p>
+                    <p class="mb-0 line info"><span>2019</span> Tiếp tục học Vue, React, NodeJS, Express JS</p>
+                </div>
+            </div>
+            <div class="skills" v-bind:class="{'d-none': tab !== 'skills'}">
+                <p class="lead"><i class="fas fa-book"></i>Skill Set</p>
+                <div class="p-3">
+                    <p class="text-center font-weight-bold h4 mb-3">Language</p>
+                    <div class="d-flex skills_">
+                        <div class="skill">
+                            <img src="img/html5.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                HTML 5
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="img/css3.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                CSS 3
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="img/javascript.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                Javascript
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="img/jquery.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                Jquery
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="img/php.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                PHP
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center font-weight-bold h4 my-3">Frameworks</p>
+                    <div class="d-flex skills_">
+                        <div class="skill">
+                            <img src="img/laravel.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                Laravel
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="img/zend.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                Zend
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="img/nodejs.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                NodeJS
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="img/express.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                ExpressJS
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="img/bootstrap.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                Bootstrap
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="img/vue.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                Vue
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="img/react.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                React
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="img/nuxt.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                Nuxt
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center font-weight-bold h4 my-3">Tools & Processors</p>
+                    <div class="d-flex skills_">
+                        <div class="skill">
+                            <img src="img/sass.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                Sass
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center font-weight-bold h4 my-3">Database</p>
+                    <div class="d-flex skills_">
+                        <div class="skill">
+                            <img src="img/mysql.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                MySQL
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="img/mongo.png" class="img-fluid" alt="">
+                            <div class="s-name">
+                                MongoDB
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

@@ -1,6 +1,11 @@
 new Vue({
     el: "#app",
     data: {
-        test: "Message"
+        tab: 'profile'
+    },
+    methods: {
+        setTab: function (tab) {
+            this.tab = tab;
+        }
     }
 });
