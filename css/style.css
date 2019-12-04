@@ -1,9 +1,6 @@
 body {
     font-family: 'Quicksand', sans-serif !important;
-    background: url("../img/background.jpg");
-}
-
-.main {
+    background: #fbfbfb;
 }
 
 .information {
@@ -11,10 +8,11 @@ body {
     padding: 15px;
     width: 100%;
     align-items: center;
+    box-shadow: 5px 5px 20px grey;
 }
 
 .information > .top {
-    background: #00c4ff;
+    background-image: linear-gradient(90deg, #77e0ff, #00c4ff, #77e0ff);
     flex-direction: column;
     align-items: center;
 }
@@ -45,8 +43,7 @@ body {
 }
 
 .information i {
-    font-size: 18px;
-    vertical-align: middle;
+    font-size: 23px;
 }
 
 .information .birthday {
@@ -82,7 +79,7 @@ body {
     left: 0;
     bottom: 0;
     z-index: 9;
-    height: 30%;
+    height: 50%;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -93,7 +90,7 @@ body {
 }
 
 .avatar div:hover {
-    background: rgba(0, 196, 255, 0.5);
+    background: rgba(0, 133, 173, 0.5);
 }
 
 .avatar a {
@@ -176,13 +173,13 @@ body {
 
 .page a {
     font-weight: 500;
-    color:#007a9e;
+    color: #007a9e;
     text-decoration: none;
     transition: .15s;
 }
 
-.page a:hover{
-    color:#005169;
+.page a:hover {
+    color: #005169;
 }
 
 .skills_ {
@@ -210,6 +207,10 @@ body {
 @media (min-width: 1200px) {
     .skills_ .skill {
         width: 20% !important;
+    }
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 940px;
     }
 }
 
