@@ -43,7 +43,7 @@ body {
 }
 
 .information i {
-    font-size: 23px;
+    font-size: 19px;
 }
 
 .information .birthday {
@@ -64,7 +64,7 @@ body {
 
 .avatar {
     overflow: hidden;
-    width: 180px;
+    width: 160px;
     position: relative;
     border-radius: 50%;
     border: 2px solid white;
